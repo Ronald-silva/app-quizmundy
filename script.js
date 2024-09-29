@@ -1,3 +1,5 @@
+const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY || 'SUA_CHAVE_FALLBACK';  // Fallback opcional
+
 // Função para chamar a API do ChatGPT 
 async function getChatGPTResponse(prompt) {
     try {
@@ -5,7 +7,7 @@ async function getChatGPTResponse(prompt) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer SUA_CHAVE_DE_API`  // Substitua pela sua chave de API
+                'Authorization': `Bearer ${apiKey}`  // Usando a variável de ambiente
             },
             body: JSON.stringify({
                 model: "gpt-3.5-turbo",  // Usando o modelo gpt-3.5-turbo para gerar o quiz
