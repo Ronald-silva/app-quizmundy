@@ -14,7 +14,7 @@ body {
     text-align: center;
     background: radial-gradient(circle, #001f3f 0%, #003366 100%); /* Fundo com gradiente */
     padding: 40px 60px;
-    margin: 0 30px 0 30px;
+    margin: 0 60px 0 60px;
     border-radius: 15px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); /* Sombra ao redor do contêiner */
     max-width: 600px;
@@ -24,7 +24,7 @@ body {
     width: 100px;
     margin-bottom: 20px;
     border-radius: 50%;
-    border:
+    border: solid 2px white;
 }
 
 h1 {
